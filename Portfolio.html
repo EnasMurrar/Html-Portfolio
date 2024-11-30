@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>My Portfolio</title>
 </head>
+
 <body>
-    
+
     <h1>Enas Murrar Portfolio</h1>
-    
+
     <h3>About Me</h3>
     <div>
         <p>Hello, I am Enas Murrar, a computer engineering graduate from Birzeit University in 2023.</p>
     </div>
-    
-    
-    <h3>TECHNICAL SKILLS</h3>
-        <ul>
-            <li>java </li>
-            <li>Python </li>
-            <li>Html CSS</li>
-        </ul>
 
-    
+
+    <h3>TECHNICAL SKILLS</h3>
+    <ul>
+        <li>java </li>
+        <li>Python </li>
+        <li>Html CSS</li>
+    </ul>
+
+
     <h3>TECHNICAL PROJECTS</h3>
-        <table border="1">
-            <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Animal Trading Cards project</td>
-                <td>Python project to create a description card for a specific animal</td>
-            </tr>
-            <tr>
-                <td>Google Interface</td>
-                <td>HTML CSS Project to Create Google Home Interface</td>
-            </tr>
-        </table>
-    
+    <table border="1">
+        <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Animal Trading Cards project</td>
+            <td>Python project to create a description card for a specific animal</td>
+        </tr>
+        <tr>
+            <td>Google Interface</td>
+            <td>HTML CSS Project to Create Google Home Interface</td>
+        </tr>
+    </table>
+
+
+    <!-- Select dropdown -->
+    <div>
+        <label for="TST">TECHNICAL SKILLS Tools</label>
+        <select id="skills" name="skills">
+            <option value="VsCode">Visual studio Code</option>
+            <option value="PyCharm">PyCharm</option>
+            <option value="eclipse">eclipse</option>
+            <option value="Trello">Trello</option>
+        </select>
+    </div>
+
+
+
+
     <h3>Contact Me</h3>
     <form>
         <div>
@@ -53,9 +70,24 @@
             <label for="description">Description:</label>
             <textarea id="description" name="description"></textarea>
         </div>
+        <!-- Checkbox  -->
+        <div>
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I certify that the information is correct.
+            </label>
+        </div>
+
+        <!-- Link to external website (e.g., LinkedIn) -->
+        <div>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/enas-murrar-99b0a624a/" target="_blank">LinkedIn</a></p>
+        </div>
+
+
         <span>
             <button type="submit">Submit</button>
         </span>
     </form>
 </body>
+
 </html>
